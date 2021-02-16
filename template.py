@@ -17,13 +17,13 @@ async def on_ready():
     bot.conn = await main.connect(bot, 1234567890, 0987654321)
     #client.conn = await main.connect(client, 1234567890, 0987654321)
 
-    print(bot.conn.content())
+    print(await bot.conn.content())
     #print(client.conn.content())
 
-    bot.conn.edit({'edited': 'content'})
+    await bot.conn.edit({'edited': 'content'})
     #client.conn.edit({'edited': 'content'})
 
-    bot.conn.remove_db()
+    await bot.conn.remove_db()
     #client.conn.remove_db()
 
 
