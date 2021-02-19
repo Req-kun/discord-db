@@ -1,3 +1,9 @@
+# インストール
+
+```
+pip install -U discord-file-database
+```
+
 # データベースの作成
 
 この関数はデータベースを作成する一度のみ使用  
